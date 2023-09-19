@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rise</title>
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__logo">
+					<img src="./assets/icons/logo.svg" alt="rise creative">
+				</div>
+				<nav>
+					<ul class="header__menu">
+						<li><a href="#home" class="header__menu__item">Home</a></li>
+						<li><a href="#projects" class="header__menu__item">Project</a></li>
+						<li><a href="#about" class="header__menu__item">About</a></li>
+						<li><a href="#blog" class="header__menu__item">Blog</a></li>
+						<li><a href="#contact" class="header__menu__item">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="header__auth">
+					<button style="margin-right: 16px;" class="button button-outlined" id="signIn">Sign in</button>
+					<button class="button button-yellow" id="signUp">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+				  <h2 class="modal__title" id="modal-1-title">
+					Sign in
+				  </h2>
+				  <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<div class="modal__form">
+						<form class="form" action="">
+							<div class="form-item">
+								<input type="email" name="email" id="email" onkeyup="this.setAttribute('value', this.value);" value=">
+								<label for="email">Your Email</label>
+							</div>
+							<div class="form-item">
+								<input type="password" name="password" id="password" onkeyup="this.setAttribute('value', this.value);" value=">
+								<label for="password">Password</label>
+							</div>
+						</form>
+						<div class="form-button">
+							<button class="button button-yellow" type="submit">Submit</button>
+						</div>
+					</div>
+				</main>
+			  </div>
+			</div>
+		  </div>
+		  <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+				<header class="modal__header">
+				  <h2 class="modal__title" id="modal-2-title">
+					Sign up
+				  </h2>
+				  <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+				</header>
+				<main class="modal__content" id="modal-2-content">
+					<div class="modal__form">
+						<form class="form" action="">
+							<div class="form-item">
+								<input type="name" name="name" id="name" onkeyup="this.setAttribute('value', this.value);" value=">
+								<label for="name">Your Name</label>
+							</div>
+							<div class="form-item">
+								<input type="email" name="email" id="email" onkeyup="this.setAttribute('value', this.value);" value=">
+								<label for="email">Your Email</label>
+							</div>
+							<div class="form-item">
+								<input type="password" name="password" id="password" onkeyup="this.setAttribute('value', this.value);" value=">
+								<label for="password">Password</label>
+							</div>
+						</form>
+						<div class="form-button" style="margin-top: 3%;">
+							<button class="button button-yellow" type="submit">Submit</button>
+						</div>
+					</div>
+				</main>
+			  </div>
+			</div>
+		  </div>
+		<section class="hero" id="home">
+			<div class="container">
+				<div class="hero__wrapper">
+					<div class="hero__descr">
+						<h1 class="hero__title">We’re a Creative Design Agency</h1>
+						<div class="hero__subtitle">We are delivering top level digital services best experlenced team, just get stared</div>
+						<img src="./assets/icons/star.svg" alt="star">
+						<div class="hero__buttons">
+							<button class="button button-yellow">Get Started 
+								<img src="./assets/icons/arrow.svg" alt="arrow">
+							</button>
+							<a href="#" class="hero__buttons__play">
+								<img src="./assets/icons/play.svg" alt="play">
+								<div>How it works</div>
+							</a>
+						</div>
+						<div class="hero__stats">
+							<div class="hero__stats__item">
+								<div class="hero__stats__item__number">
+									20+
+								</div>
+								<div class="hero__stats__item__descr">
+									Years of Excellent
+								</div>
+							</div>
+							<div class="hero__stats__item">
+								<div class="hero__stats__item__number">
+									90%
+								</div>
+								<div class="hero__stats__item__descr">
+									Happy Client
+								</div>
+							</div>
+							<div class="hero__stats__item">
+								<div class="hero__stats__item__number">
+									80%
+								</div>
+								<div class="hero__stats__item__descr">
+									Project Succes
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero__img">
+						<img src="./assets/img/team.png" alt="team">
+						<img src="./assets/img/market_static.png" alt="market static">
+						<img src="./assets/icons/dot.svg" alt="dot">
+						<img src="./assets/icons/mask.svg" alt="mask">
+					</div>
+					<div class="hero__logos">
+						<img src="./assets/icons/Google.svg" alt="google">
+						<img src="./assets/icons/Dropbox.svg" alt="Dropbox">
+						<img src="./assets/icons/amazon.svg" alt="amazon">
+						<img src="./assets/icons/Atlassian.svg" alt="Atlassian">
+						<img src="./assets/icons/Atlassian.svg" alt="Atlassian">
+						<img src="./assets/icons/HubSpot.svg" alt="HubSpot">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us" id="about">
+			<div class="container">
+				<div class="about-us__wrapper">
+					<div class="about-us__img">
+						<img src="./assets/img/about_us.jpeg" alt="about_us">
+						<img src="./assets/icons/mask_grey.svg" alt="mask">
+					</div>
+					<div class="about-us__descr">
+						<div class="ellipse">About us</div>
+						<div class="title">We are skilled in providing superior services</div>
+						<div class="subtitle">Customer satisfaction is such a key part of many successful businesses. Most companies have</div>
+						<button class="button button-black">Read more
+							<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 8.00003C0 7.77272 0.0903001 7.55471 0.251035 7.39398C0.41177 7.23324 0.629774 7.14294 0.857088 7.14294H21.0724L15.6779 1.75015C15.5169 1.58921 15.4265 1.37093 15.4265 1.14333C15.4265 0.915726 15.5169 0.697447 15.6779 0.536508C15.8388 0.37557 16.0571 0.285156 16.2847 0.285156C16.5123 0.285156 16.7306 0.37557 16.8915 0.536508L23.7482 7.39321C23.828 7.47283 23.8913 7.56741 23.9346 7.67154C23.9778 7.77567 24 7.88729 24 8.00003C24 8.11277 23.9778 8.2244 23.9346 8.32852C23.8913 8.43265 23.828 8.52723 23.7482 8.60685L16.8915 15.4636C16.7306 15.6245 16.5123 15.7149 16.2847 15.7149C16.0571 15.7149 15.8388 15.6245 15.6779 15.4636C15.5169 15.3026 15.4265 15.0843 15.4265 14.8567C15.4265 14.6291 15.5169 14.4109 15.6779 14.2499L21.0724 8.85712H0.857088C0.629774 8.85712 0.41177 8.76682 0.251035 8.60608C0.0903001 8.44535 0 8.22734 0 8.00003Z" fill="#24272E"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="why-choose">
+			<div class="container">
+				<div class="why-choose__wrapper">
+					<div class="why-choose__descr">
+						<div class="ellipse">Wy choose us</div>
+						<div class="title">Expert advising clients <br/> On financial challenges</div>
+						<div class="subtitle">Customer satisfaction is such a key part of many<br/>successful businesses. Most companies ,..</div>
+						<div class="why-choose__list">
+							<div class="why-choose__list-item">
+								<div class="why-choose__list-item__img">
+									<img src="./assets/icons/loop.svg" alt="loop">
+								</div>
+								<div class="why-choose__list-item__text">
+									<div class="title title-fz20">Frist working process</div>
+								<div class="subtitle subtitle-fz16">Customer satisfaction is such a key <br/> part of many successful businesses.</div>
+								</div>
+							</div>
+							<div class="why-choose__list-item">
+								<div class="why-choose__list-item__img">
+									<img src="./assets/icons/dedicated_team.svg" alt="dedicated_team">
+								</div>
+								<div class="why-choose__list-item__text">
+									<div class="title title-fz20">Dedicated Team</div>
+								<div class="subtitle subtitle-fz16">business model that refers to an agreement <br/> between the client and service provider,</div>
+								</div>
+							</div>
+							<div class="why-choose__list-item">
+								<div class="why-choose__list-item__img">
+									<img src="./assets/icons/support.svg" alt="support">
+								</div>
+								<div class="why-choose__list-item__text">
+									<div class="title title-fz20">24/7 Hours Support</div>
+									<div class="subtitle  subtitle-fz18">Scaling your team to provide assistance <br/> around the clock might sound like a</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="why-choose__img">
+						<img src="./assets/img/why_choose_us.png" alt="why choose us">
+						<img src="./assets/icons/mask_grey.svg" alt="mask grey">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services" id="blog">
+			<div class="container">
+				<div class="services__about">
+					<div class="ellipse">our searvices</div>
+					<div class="title title-fz20">What Creative Design We Offer</div>
+					<div class="subtitle">Business owners and managers lead by example. The values and <br/> work ethic displayed by a company's decision makers have a direct <br/> ...</div>
+				</div>
+				<div class="services__list">
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/box.svg" alt="box"></div>
+						<div class="title title-fz20">Product <br/> Management</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/web.svg" alt="web"></div>
+						<div class="title title-fz20">Web & Mobile <br/>Development</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/brochures.svg" alt="brochures"></div>
+						<div class="title title-fz20">Brochures & <br/> Flyers</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/name_cards.svg" alt="logo"></div>
+						<div class="title title-fz20">Logo & name <br/> cards</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/marketing.svg" alt="marketing"></div>
+						<div class="title title-fz20">Marketing & <br/> Commuication</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/business.svg" alt="business"></div>
+						<div class="title title-fz20">Business <br/> Development</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/human_resources.svg" alt="human_resources"></div>
+						<div class="title title-fz20">Human <br/> Resources</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+					<div class="services__list-item">
+						<div class="services__list-item__img"><img src="./assets/icons/infographics.svg" alt="infographics"></div>
+						<div class="title title-fz20">Infographics & <br/> Illustrations</div>
+						<div class="subtitile subtitle-fz18">vacancy available 20</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="projects" id="projects">
+			<div class="container">
+				<div class="projects__header">
+					<div class="projects__descr">
+						<div class="ellipse">Ready to use</div>
+						<div class="title">Elegant And <br/> Impressive Inner Pages</div>
+					</div>
+					<div class="projects__arrows">
+						<div class="projects__arrows-prev">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="arrow-right-circle">
+								<path id="Vector" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="#636770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path id="Vector_2" d="M24 32L32 24L24 16" stroke="#636770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path id="Vector_3" d="M16 24H32" stroke="#636770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+							</svg>
+						</div>
+						<div class="projects__arrows-next">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="arrow-right-circle">
+									<path id="Vector" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="#636770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path id="Vector_2" d="M24 32L32 24L24 16" stroke="#636770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path id="Vector_3" d="M16 24H32" stroke="#636770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+						</svg></div>
+					</div>
+				</div>
+				<div class="projects__carousel">
+					<div class="projects__carousel__wrapper">
+					  <div class="projects__carousel-slide">
+						<div class="projects__carousel-slide__img">
+							<img src="./assets/img/hotel.png" alt="hotel booking website">
+						</div>
+						<div class="projects__carousel-slide__descr">
+							<div class="title title-fz34">Hotel Booking Website</div>
+							<div class="subtitle  projects__carousel-slide__subtitle">Business owners and managers lead by example.<br/> The values and work ethic displayed by a</div>
+							<div class="projects__carousel-slide__link">
+								<a href="#">Read Case Study
+									<img src="./assets/icons/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+					  </div>
+					  <div class="projects__carousel-slide">
+						<div class="projects__carousel-slide__img">
+							<img src="./assets/img/uiux.png" alt="ui/ux app design">
+						</div>
+						<div class="projects__carousel-slide__descr">
+							<div class="title title-fz34">UI/UX App Design</div>
+							<div class="subtitle  projects__carousel-slide__subtitle">Business owners and managers lead by example.<br/> The values and work ethic displayed by a</div>
+							<div class="projects__carousel-slide__link">
+								<a href="#">Read Case Study
+									<img src="./assets/icons/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+					  </div>
+					  <div class="projects__carousel-slide">
+						<div class="projects__carousel-slide__img">
+							<img src="./assets/img/booking.png" alt="ceramic e-commerce">
+						</div>
+						<div class="projects__carousel-slide__descr">
+							<div class="title title-fz34">Ceramic E-commerce</div>
+							<div class="subtitle  projects__carousel-slide__subtitle">Business owners and managers lead by example.<br/> The values and work ethic displayed by a</div>
+							<div class="projects__carousel-slide__link">
+								<a href="#">Read Case Study
+									<img src="./assets/icons/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+					  </div>
+
+					  <div class="projects__carousel-slide">
+						<div class="projects__carousel-slide__img">
+							<img src="./assets/img/booking.png" alt="ceramic e-commerce">
+						</div>
+						<div class="projects__carousel-slide__descr">
+							<div class="title title-fz34">Ceramic E-commerce</div>
+							<div class="subtitle  projects__carousel-slide__subtitle">Business owners and managers lead by example.<br/> The values and work ethic displayed by a</div>
+							<div class="projects__carousel-slide__link">
+								<a href="#">Read Case Study
+									<img src="./assets/icons/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+					  </div>
+
+					  <div class="projects__carousel-slide">
+						<div class="projects__carousel-slide__img">
+							<img src="./assets/img/booking.png" alt="ceramic e-commerce">
+						</div>
+						<div class="projects__carousel-slide__descr">
+							<div class="title title-fz34">Hotel Booking Website</div>
+							<div class="subtitle projects__carousel-slide__subtitle">Business owners and managers lead by example.<br/> The values and work ethic displayed by a</div>
+							<div class="projects__carousel-slide__link">
+								<a href="#">Read Case Study
+									<img src="./assets/icons/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+					  </div>
+
+					  <div class="projects__carousel-slide">
+						<div class="projects__carousel-slide__img">
+							<img src="./assets/img/booking.png" alt="ceramic e-commerce">
+						</div>
+						<div class="projects__carousel-slide__descr">
+							<div class="title title-fz34">Hotel Booking Website</div>
+							<div class="subtitle  projects__carousel-slide__subtitle">Business owners and managers lead by example.<br/> The values and work ethic displayed by a</div>
+							<div class="projects__carousel-slide__link">
+								<a href="#">Read Case Study
+									<img src="./assets/icons/arrow.svg" alt="arrow">
+								</a>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</section>
+		<section class="feedbacks">
+			<div class="container">
+				<div class="feedbacks__header center">
+					<div class="ellipse">TESTIMONIAL</div>
+					<div class="title">Client’s kind Words</div>
+					<div class="subtitle">Business owners and managers lead by example. The values</div>
+				</div>
+				<div class="feedbacks__carousel">
+					<div class="feedbacks__carousel__wrapper">
+						<div class="feedbacks__carousel-slide swiper-slide">
+							<div class="feedbacks__carousel-slide__img"><img src="./assets/icons/first_feedbaack.svg" alt="first feedback"></div>
+							<div class="feedbacks__carousel-slide__name">Brooklyn Simmons</div>
+							<div class="feedbacks__carousel-slide__role">Co-Founder & Chief Executive Officer</div>
+							<div class="feedbacks__carousel-slide__stars"><img src="./assets/icons/stars.png" alt="stars"></div>
+							<div class="feedbacks__carousel-slide__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+	
+						<div class="feedbacks__carousel-slide swiper-slide">
+							<div class="feedbacks__carousel-slide__img"><img src="./assets/icons/second__feedback.svg" alt="first feedback"></div>
+							<div class="feedbacks__carousel-slide__name">Brooklyn Simmons</div>
+							<div class="feedbacks__carousel-slide__role">Co-Founder & Chief Executive Officer</div>
+							<div class="feedbacks__carousel-slide__stars"><img src="./assets/icons/stars.png" alt="stars"></div>
+							<div class="feedbacks__carousel-slide__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+	
+						<div class="feedbacks__carousel-slide  swiper-slide">
+							<div class="feedbacks__carousel-slide__img"><img src="./assets/icons/third__feedback.svg" alt="first feedback"></div>
+							<div class="feedbacks__carousel-slide__name">Brooklyn Simmons</div>
+							<div class="feedbacks__carousel-slide__role">Co-Founder & Chief Executive Officer</div>
+							<div class="feedbacks__carousel-slide__stars"><img src="./assets/icons/stars.png" alt="stars"></div>
+							<div class="feedbacks__carousel-slide__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+	
+						<div class="feedbacks__carousel-slide  swiper-slide">
+							<div class="feedbacks__carousel-slide__img"><img src="./assets/icons/first_feedbaack.svg" alt="first feedback"></div>
+							<div class="feedbacks__carousel-slide__name">Brooklyn Simmons</div>
+							<div class="feedbacks__carousel-slide__role">Co-Founder & Chief Executive Officer</div>
+							<div class="feedbacks__carousel-slide__stars"><img src="./assets/icons/stars.png" alt="stars"></div>
+							<div class="feedbacks__carousel-slide__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+	
+						<div class="feedbacks__carousel-slide  swiper-slide">
+							<div class="feedbacks__carousel-slide__img"><img src="./assets/icons/first_feedbaack.svg" alt="first feedback"></div>
+							<div class="feedbacks__carousel-slide__name">Brooklyn Simmons</div>
+							<div class="feedbacks__carousel-slide__role">Co-Founder & Chief Executive Officer</div>
+							<div class="feedbacks__carousel-slide__stars"><img src="./assets/icons/stars.png" alt="stars"></div>
+							<div class="feedbacks__carousel-slide__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+					</div>
+					<div class="feedbacks__carousel-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="contact-us" id="contact">
+			<div class="container">
+			<div class="contact-us__wrapper">
+				<div class="contact-us__about">
+					<div class="ellipse">OUR CONTACTS</div>
+					<div class="title">Let’s Start Working Together. <br/> Get in Touch with Us!</div>
+					<div class="subtitle">Get in touch to discuss your employee wellbeing needs today. <br/> Please give us a call, drop us an email.</div>
+					<div class="contact-us__about__addr">
+						<div class="contact-us__about__addr-item">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.9987 13.9999C7.15666 13.2816 6.37616 12.4942 5.66537 11.6459C4.5987 10.3719 3.33203 8.47457 3.33203 6.66656C3.33157 5.74321 3.60504 4.84046 4.11783 4.07258C4.63062 3.3047 5.35968 2.7062 6.21274 2.35283C7.06581 1.99946 8.00453 1.90709 8.91011 2.08743C9.81569 2.26776 10.6474 2.71269 11.3 3.3659C11.7345 3.79847 12.0789 4.31292 12.3133 4.87948C12.5476 5.44604 12.6673 6.05345 12.6654 6.66656C12.6654 8.47457 11.3987 10.3719 10.332 11.6459C9.62123 12.4942 8.84074 13.2816 7.9987 13.9999ZM7.9987 4.66657C7.46827 4.66657 6.95956 4.87728 6.58448 5.25235C6.20941 5.62742 5.9987 6.13613 5.9987 6.66656C5.9987 7.197 6.20941 7.70571 6.58448 8.08078C6.95956 8.45585 7.46827 8.66656 7.9987 8.66656C8.52913 8.66656 9.03784 8.45585 9.41291 8.08078C9.78799 7.70571 9.9987 7.197 9.9987 6.66656C9.9987 6.13613 9.78799 5.62742 9.41291 5.25235C9.03784 4.87728 8.52913 4.66657 7.9987 4.66657Z"/>
+							</svg>
+							<div class="contact-us__about__addr__text">
+								41 Pilgrm Avenue, Chevy Chase, Md 20815
+							</div>
+						</div>
+						<div class="contact-us__about__addr-item">
+							<svg width="11" height="14" viewBox="0 0 11 14" fill="black" xmlns="http://www.w3.org/2000/svg">
+								<path id="Vector" d="M1.60004 0.400411L2.70689 0.0666964C3.07219 -0.0432657 3.46502 -0.0165856 3.8121 0.14176C4.15917 0.300105 4.4368 0.579302 4.59318 0.927268L5.36918 2.65298C5.50386 2.95237 5.5414 3.28641 5.47653 3.60822C5.41165 3.93004 5.24762 4.22345 5.00746 4.44727L3.82632 5.54784C3.66804 5.69812 3.78804 6.28384 4.36632 7.28612C4.94518 8.28898 5.39261 8.68555 5.59889 8.62384L7.14632 8.1507C7.45999 8.05476 7.79581 8.05937 8.10672 8.16389C8.41763 8.26842 8.68803 8.46761 8.88004 8.73355L9.98289 10.2621C10.2057 10.5708 10.3088 10.9498 10.2732 11.3288C10.2375 11.7078 10.0656 12.061 9.78918 12.3227L8.93661 13.1301C8.66138 13.3908 8.32194 13.5737 7.95292 13.6604C7.5839 13.747 7.1985 13.7342 6.83604 13.6233C5.04975 13.0764 3.39546 11.4536 1.85089 8.77755C0.302894 6.09755 -0.281677 3.83698 0.125751 1.99012C0.207925 1.61798 0.387859 1.27449 0.647006 0.995055C0.906152 0.715619 1.23513 0.510351 1.60004 0.400411Z"/>
+							</svg>
+							<div class="contact-us__about__addr__text">
+								+01234 567 890
+							</div>
+						</div>
+						<div class="contact-us__about__addr-item">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.332 2.6665H2.66536C1.93203 2.6665 1.3387 3.2665 1.3387 3.99984L1.33203 11.9998C1.33203 12.7332 1.93203 13.3332 2.66536 13.3332H13.332C14.0654 13.3332 14.6654 12.7332 14.6654 11.9998V3.99984C14.6654 3.2665 14.0654 2.6665 13.332 2.6665ZM13.332 5.33317L7.9987 8.6665L2.66536 5.33317V3.99984L7.9987 7.33317L13.332 3.99984V5.33317Z"/>
+							</svg>
+							<div class="contact-us__about__addr__text">
+								info@agency.com
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			<div class="contact-us__form">
+				<form class="form" action="">
+					<div class="form-item">
+						<input type="name" name="name" id="name" onkeyup="this.setAttribute('value', this.value);" value="">
+						<label for="name">Your Name</label>
+					</div>
+					<div class="form-item">
+						<input type="email" name="email" id="email" onkeyup="this.setAttribute('value', this.value);" value="">
+						<label for="email">Your Email</label>
+					</div>
+					<div class="form-item">
+						<input type="text" name="website" id="website" onkeyup="this.setAttribute('value', this.value);" value="">
+						<label for="website">Website</label>
+					</div>
+					<div class="form-item">
+						<input type="text" name="project" onkeyup="this.setAttribute('value', this.value);" value="">
+						<label for="project">Tell About Your Project</label>
+					</div>
+				</form>
+				<div class="contact-us__form-button">
+					<button class="button button-yellow" type="submit">Submit</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__about">
+						<img src="./assets/icons/logo.svg" alt="logo">
+						<div class="footer__descr">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+						</div>
+						<div class="footer__social">
+							<a style="margin-right: 16px;" href="#"><img src="./assets/icons/linkedin.svg" alt="linkedin"></a>
+							<a style="margin-right: 16px;" href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+							<a href="#"><img src="./assets/icons/twitter.svg" alt="twitter"></a>
+						</div>
+					</div>
+					<div class="footer__list">
+						<div class="footer__item">
+							<div class="subtitle  footer__item__title">Useful Link</div>
+							<div class="footer__item__links">
+								<a href="#">Home</a>
+								<a href="#">Company news</a>
+								<a href="#">About us</a>
+								<a href="#">Projects</a>
+								<a href="#">Careers</a>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="subtitle  footer__item__title">Services</div>
+							<div class="footer__item__links">
+								<a href="#">Website Design</a>
+								<a href="#">Logo and Branding</a>
+								<a href="#">Mobile App</a>
+								<a href="#">Search Engine</a>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="subtitle footer__item__title">Company</div>
+							<div class="footer__item__links">
+								<a href="#">Carees</a>
+								<a href="#">Contact</a>
+								<a href="#">FAQ</a>
+								<a href="#">Partners</a>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item__title">Contact us</div>
+							<div class="footer__item__links">
+								<div class="footer__addr">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="#F0E714" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.9987 13.9999C7.15666 13.2816 6.37616 12.4942 5.66537 11.6459C4.5987 10.3719 3.33203 8.47457 3.33203 6.66656C3.33157 5.74321 3.60504 4.84046 4.11783 4.07258C4.63062 3.3047 5.35968 2.7062 6.21274 2.35283C7.06581 1.99946 8.00453 1.90709 8.91011 2.08743C9.81569 2.26776 10.6474 2.71269 11.3 3.3659C11.7345 3.79847 12.0789 4.31292 12.3133 4.87948C12.5476 5.44604 12.6673 6.05345 12.6654 6.66656C12.6654 8.47457 11.3987 10.3719 10.332 11.6459C9.62123 12.4942 8.84074 13.2816 7.9987 13.9999ZM7.9987 4.66657C7.46827 4.66657 6.95956 4.87728 6.58448 5.25235C6.20941 5.62742 5.9987 6.13613 5.9987 6.66656C5.9987 7.197 6.20941 7.70571 6.58448 8.08078C6.95956 8.45585 7.46827 8.66656 7.9987 8.66656C8.52913 8.66656 9.03784 8.45585 9.41291 8.08078C9.78799 7.70571 9.9987 7.197 9.9987 6.66656C9.9987 6.13613 9.78799 5.62742 9.41291 5.25235C9.03784 4.87728 8.52913 4.66657 7.9987 4.66657Z"/>
+									</svg>
+									<div class="footer__addr__text">
+										41 Pilgrm Avenue, Chevy Chase, Md 20815
+									</div>
+								</div>
+								<div class="footer__addr">
+									<svg width="11" height="14" viewBox="0 0 11 14" fill="#F0E714" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M1.60004 0.400411L2.70689 0.0666964C3.07219 -0.0432657 3.46502 -0.0165856 3.8121 0.14176C4.15917 0.300105 4.4368 0.579302 4.59318 0.927268L5.36918 2.65298C5.50386 2.95237 5.5414 3.28641 5.47653 3.60822C5.41165 3.93004 5.24762 4.22345 5.00746 4.44727L3.82632 5.54784C3.66804 5.69812 3.78804 6.28384 4.36632 7.28612C4.94518 8.28898 5.39261 8.68555 5.59889 8.62384L7.14632 8.1507C7.45999 8.05476 7.79581 8.05937 8.10672 8.16389C8.41763 8.26842 8.68803 8.46761 8.88004 8.73355L9.98289 10.2621C10.2057 10.5708 10.3088 10.9498 10.2732 11.3288C10.2375 11.7078 10.0656 12.061 9.78918 12.3227L8.93661 13.1301C8.66138 13.3908 8.32194 13.5737 7.95292 13.6604C7.5839 13.747 7.1985 13.7342 6.83604 13.6233C5.04975 13.0764 3.39546 11.4536 1.85089 8.77755C0.302894 6.09755 -0.281677 3.83698 0.125751 1.99012C0.207925 1.61798 0.387859 1.27449 0.647006 0.995055C0.906152 0.715619 1.23513 0.510351 1.60004 0.400411Z"/>
+									</svg>
+									<div class="footer__addr__text">
+										+01234 567 890
+									</div>
+								</div>
+								<div class="footer__addr">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="#F0E714" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.332 2.6665H2.66536C1.93203 2.6665 1.3387 3.2665 1.3387 3.99984L1.33203 11.9998C1.33203 12.7332 1.93203 13.3332 2.66536 13.3332H13.332C14.0654 13.3332 14.6654 12.7332 14.6654 11.9998V3.99984C14.6654 3.2665 14.0654 2.6665 13.332 2.6665ZM13.332 5.33317L7.9987 8.6665L2.66536 5.33317V3.99984L7.9987 7.33317L13.332 3.99984V5.33317Z"/>
+									</svg>
+									<div class="footer__addr__text">
+										info@agency.com
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</footer>
+	</main>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+	<script type="module" src="js/script.js"></script>
+</body>
+</html>

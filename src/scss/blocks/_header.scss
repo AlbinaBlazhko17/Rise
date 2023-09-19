@@ -1,0 +1,48 @@
+.header {
+	&__wrapper {
+		position: fixed;
+		margin-top: 27px;
+		margin-bottom: 72px;
+		width: 90%;
+		background-color: transparent;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		z-index: 9999;
+	}
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding-inline-start: 0 !important;
+		&__item {
+			text-decoration: none;
+			position: relative;
+			color: #BAB9B9;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				top: 25px;
+				bottom: 0;
+				left: 0;
+				background-color: white;
+				transform-origin: bottom left;
+				transition: transform 0.25s ease-out;
+			}
+			&:hover {
+				color: white;
+				&::after {
+					transform: scaleX(1);
+					transform-origin: bottom left;
+				}
+			}
+		}
+	}
+	&__auth {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

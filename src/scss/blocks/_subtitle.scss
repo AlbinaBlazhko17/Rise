@@ -1,0 +1,17 @@
+.subtitle {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: $grey;
+	margin-bottom: 40px;
+	line-height: 30px;
+	&-fz16 {
+		font-size: 16px;
+	}
+	&-fz18 {
+		font-size: 18px;
+	}
+	&-fz14 {
+		font-size: 14px;
+	}
+}

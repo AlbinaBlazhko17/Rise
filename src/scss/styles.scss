@@ -1,0 +1,69 @@
+@import './base/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'itc_avant_garde_gothic_stdBk';
+    src: url('../assets/font/itcavantgardestd-bk-webfont.woff2') format('woff2'),
+         url('../assets/font/itcavantgardestd-bk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'itc_avant_garde_gothic_stdBk';
+    src: url('../assets/font/itcavantgardestd-bk-webfont-medium.woff2') format('woff2'),
+         url('../assets/font/itcavantgardestd-bk-webfont-medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'itc_avant_garde_gothic_stdBk';
+    src: url('../assets/font/itcavantgardestd-bk-webfont-bold.woff2') format('woff2'),
+         url('../assets/font/itcavantgardestd-bk-webfont-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'itc_avant_garde_gothic_stdBk', sans-serif;
+    margin: 0;
+    a {
+        text-decoration: none;
+    }
+    button[type="submit"] {
+        font-family: 'Inter', sans-serif;
+		font-size: 18px;
+    }
+}
+
+
+.container{
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+main {
+    background: $color-white;
+}
+
+.center {
+    text-align: center;
+}
+
+@import './blocks/header';
+@import './blocks/buttons';
+@import './blocks/hero';
+@import './blocks/about';
+@import './blocks/ellipse';
+@import './blocks/title';
+@import './blocks/subtitle';
+@import './blocks/why_choose';
+@import './blocks/services';
+@import './blocks/projects';
+@import './blocks/feedbacks';
+@import './blocks/contact-us';
+@import './blocks/footer';
+@import './blocks/modal';
+@import './blocks/form';
+@import './blocks/media';
