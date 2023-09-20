@@ -1104,7 +1104,7 @@ Demo Animation Style
     height: 600px;
   }
   .projects__carousel .swiper-slide {
-    width: 40% !important;
+    width: 45% !important;
   }
   .projects__carousel-slide {
     width: 80%;
@@ -1120,6 +1120,9 @@ Demo Animation Style
   }
 }
 @media screen and (max-width: 650px) {
+  .title-fz34 {
+    font-size: 20px;
+  }
   .hero__stats__item__number {
     font-size: 35px;
   }
@@ -1161,7 +1164,7 @@ Demo Animation Style
     margin-bottom: 15px;
   }
   .projects__carousel {
-    height: 620px;
+    height: 630px;
   }
   .projects__carousel .swiper-slide {
     width: 60% !important;

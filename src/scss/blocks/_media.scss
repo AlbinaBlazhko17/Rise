@@ -231,7 +231,7 @@
 		&__carousel {
 			height: 600px;
 			.swiper-slide {
-				width: 40% !important;
+				width: 45% !important;
 			}
 			&-slide {
 				width: 80%;
@@ -254,6 +254,11 @@
 }
 
 @media screen and (max-width: 650px) {
+	.title {
+		&-fz34 {
+			font-size: 20px;
+		}
+	}
 	.hero {
 		&__stats {
 			&__item {
@@ -323,7 +328,7 @@
 	}
 	.projects {
 		&__carousel {
-			height: 620px;
+			height: 630px;
 			.swiper-slide {
 				width: 60% !important;
 			}
