@@ -87,7 +87,8 @@
 			img {
 				&:nth-child(2) {
 					height: 110px;
-					left: -16%;
+					left: -21%;
+					top: 60%;
 				}
 			}
 		}
@@ -99,8 +100,8 @@
 				&:nth-child(2) {
 					width: 112px;
 					height: 110px;
-					top: 84%;
-					left: 82%;
+					top: 92%;
+					left: 73%;
 				}
 			}
 		}
@@ -274,11 +275,13 @@
 	.about-us {
 		&__wrapper {
 			grid-template-columns: auto;
+			row-gap: 20px;
 		}
 		&__img {
 			img {
 				&:nth-child(2) {
 					left: -9%;
+					top: 69%;
 				}
 			}
 		}
@@ -310,7 +313,8 @@
 		&__img {
 			img {
 				&:nth-child(2) {
-					top: 70%;
+					left: 80%;
+					top: 79%;
 				}
 			}
 		}

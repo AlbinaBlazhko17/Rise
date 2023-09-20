@@ -32,7 +32,6 @@ body button[type=submit] {
 
 .container {
   padding: 0 5%;
-  overflow: hidden;
 }
 
 main {
@@ -159,6 +158,7 @@ main {
   background-color: #101C26;
   background-image: url(../assets/img/background.png);
   height: 100%;
+  overflow: hidden;
 }
 .hero__wrapper {
   padding-top: 10%;
@@ -286,7 +286,6 @@ main {
   width: 100%;
   max-height: 100%;
   position: relative;
-  padding-bottom: 10%;
 }
 .about-us__img img {
   width: 100%;
@@ -366,7 +365,6 @@ main {
   width: 100%;
   max-height: 100%;
   position: relative;
-  padding-bottom: 10%;
 }
 .why-choose__img img {
   border-radius: 10px;
@@ -381,7 +379,7 @@ main {
 }
 .why-choose__img img:nth-child(2) {
   position: absolute;
-  top: 73%;
+  top: 80%;
   left: 86%;
   width: 182px;
   height: 182px;
@@ -440,6 +438,7 @@ main {
 .projects {
   margin-top: 140px;
   height: 100%;
+  overflow: hidden;
 }
 .projects__carousel {
   height: 800px;
@@ -991,13 +990,14 @@ Demo Animation Style
   }
   .about-us__img img:nth-child(2) {
     height: 110px;
-    left: -16%;
+    left: -21%;
+    top: 60%;
   }
   .why-choose__img img:nth-child(2) {
     width: 112px;
     height: 110px;
-    top: 84%;
-    left: 82%;
+    top: 92%;
+    left: 73%;
   }
   .projects__carousel {
     height: 700px;
@@ -1131,9 +1131,11 @@ Demo Animation Style
   }
   .about-us__wrapper {
     grid-template-columns: auto;
+    row-gap: 20px;
   }
   .about-us__img img:nth-child(2) {
     left: -9%;
+    top: 69%;
   }
   .header__wrapper {
     width: 100%;
@@ -1150,7 +1152,8 @@ Demo Animation Style
     text-align: center;
   }
   .why-choose__img img:nth-child(2) {
-    top: 70%;
+    left: 80%;
+    top: 79%;
   }
   .why-choose__list {
     align-items: center;
