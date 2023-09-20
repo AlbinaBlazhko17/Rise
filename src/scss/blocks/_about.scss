@@ -1,9 +1,10 @@
 .about-us {
 	margin-top: 140px;
+	height: 100%;
 	&__wrapper {
 		display: grid;
-		grid-template-columns: minmax(300px, 650px) 1fr;
-		grid-template-rows: 500px;
+		grid-template-columns: auto auto;
+		grid-template-rows: 1fr;
 		column-gap: 50px;
 	}
 	&__img {
@@ -32,6 +33,6 @@
 	}
 
 	&__descr {
-		padding: 50px 0;
+		padding: 15px 0;
 	}
 }

@@ -3,7 +3,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 document.addEventListener('DOMContentLoaded', () => {
   let mySwiper = new Swiper('.projects__carousel', {
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: 'auto',
+    autoHeight: true,
     spaceBetween: 50,
     on: {
       init: function () {
@@ -16,10 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapperClass: 'projects__carousel__wrapper',
     slideClass: 'projects__carousel-slide',
 
-    // Navigation arrows
     navigation: {
       nextEl: '.projects__arrows-next',
       prevEl: '.projects__arrows-prev',
+    },
+    breakpoints: {
+      950: {
+        slidesPerView: 1,
+        centeredSlides: true,
+      },
     },
   });
 
@@ -96,5 +102,38 @@ document.addEventListener('DOMContentLoaded', () => {
   signUp.addEventListener('click', (e) => {
     e.preventDefault();
     MicroModal.show('modal-2');
+  });
+  const menu = document.querySelector('.header__menu'),
+    menuItem = document.querySelectorAll('.header__menu__item'),
+    hamburger = document.querySelector('.hamburger'),
+    buttons = document.querySelector('.header__auth');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('hamburger_active');
+    menu.classList.toggle('header__menu_active');
+    buttons.classList.toggle('header__auth_active');
+  });
+
+  menuItem.forEach((item) => {
+    item.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('header__menu_active');
+      buttons.classList.toggle('header__auth_active');
+    });
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    if (target) {
+      window.scroll({
+        top: target.offsetTop - 100,
+        behavior: 'smooth',
+      });
+    }
   });
 });

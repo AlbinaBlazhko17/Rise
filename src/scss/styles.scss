@@ -50,20 +50,52 @@ main {
 .center {
     text-align: center;
 }
+.hamburger {
+    display: none;
+     position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 10px;
+    z-index: 2;
+    span {
+        display: block; 
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 6px;
+        transition: 0.5s all;
+    }
+    &_active {
+        span {
+            margin-bottom: -2px ;
+            &:nth-child(1){
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(3){
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+}
 
 @import './blocks/header';
 @import './blocks/buttons';
 @import './blocks/hero';
 @import './blocks/about';
 @import './blocks/ellipse';
-@import './blocks/title';
-@import './blocks/subtitle';
-@import './blocks/why_choose';
+@import './blocks/titles';
+@import './blocks/subtitles';
+@import './blocks/why-choose';
 @import './blocks/services';
 @import './blocks/projects';
 @import './blocks/feedbacks';
 @import './blocks/contact-us';
 @import './blocks/footer';
-@import './blocks/modal';
+@import './blocks/modals';
 @import './blocks/form';
 @import './blocks/media';

@@ -1,9 +1,10 @@
 .why-choose {
-	margin-top: 140px;
+	margin-top: 110px;
+	height: 100%;
 	&__wrapper {
 		display: grid;
-		grid-template-columns: 1fr minmax(300px, 650px);
-		grid-template-rows: 800px;
+		grid-template-columns: 40% 60%;
+		grid-template-rows: minmax(200px, 700px);
 		column-gap: 30px;
 	}
 	&__img {
@@ -22,8 +23,8 @@
 			}
 			&:nth-child(2) {
 				position: absolute;
-				top: 76%;
-				left: 78%;
+				top: 73%;
+				left: 86%;
 				width: 182px;
 				height: 182px;
 				z-index: 1;
