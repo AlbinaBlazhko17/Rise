@@ -2,9 +2,12 @@
 	font-size: 44px;
 	font-weight: 600;
 	margin-bottom: 16px;
+	white-space: pre-line;
+	line-height: 56px;
 	&-fz20 {
 		font-size: 20px;
 		margin-bottom: 2px;
+		line-height: 32px;
 	}
 	&-fz34 {
 		font-size: 34px;

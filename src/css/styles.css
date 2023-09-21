@@ -321,10 +321,13 @@ main {
   font-size: 44px;
   font-weight: 600;
   margin-bottom: 16px;
+  white-space: pre-line;
+  line-height: 56px;
 }
 .title-fz20 {
   font-size: 20px;
   margin-bottom: 2px;
+  line-height: 32px;
 }
 .title-fz34 {
   font-size: 34px;
@@ -337,6 +340,7 @@ main {
   color: #555C68;
   margin-bottom: 40px;
   line-height: 30px;
+  white-space: pre-line;
 }
 .subtitle-fz16 {
   font-size: 16px;
@@ -420,6 +424,11 @@ main {
   box-sizing: border-box;
   padding: 32px;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.services__list-item .subtitle {
+  margin-top: auto;
 }
 .services__list-item__img {
   margin-bottom: 24px;
