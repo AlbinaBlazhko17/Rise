@@ -42,37 +42,6 @@ main {
   text-align: center;
 }
 
-.hamburger {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 10px;
-  z-index: 2;
-}
-.hamburger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-  margin-bottom: 6px;
-  transition: 0.5s all;
-}
-.hamburger_active span {
-  margin-bottom: -2px;
-}
-.hamburger_active span:nth-child(1) {
-  transform: translateY(3px) rotate(-45deg);
-}
-.hamburger_active span:nth-child(2) {
-  display: none;
-}
-.hamburger_active span:nth-child(3) {
-  transform: translateY(3px) rotate(45deg);
-}
-
 .header {
   position: fixed;
   margin-top: 27px;
@@ -118,6 +87,37 @@ main {
 .header__auth {
   display: flex;
   justify-content: flex-end;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 10px;
+  z-index: 2;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 6px;
+  transition: 0.5s all;
+}
+.hamburger-active span {
+  margin-bottom: -2px;
+}
+.hamburger-active span:nth-child(1) {
+  transform: translateY(3px) rotate(-45deg);
+}
+.hamburger-active span:nth-child(2) {
+  display: none;
+}
+.hamburger-active span:nth-child(3) {
+  transform: translateY(3px) rotate(45deg);
 }
 
 .button {
@@ -353,7 +353,6 @@ main {
   height: 100%;
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: minmax(200px, 700px);
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -920,8 +919,14 @@ Demo Animation Style
   .subtitle-fz16 {
     font-size: 14px;
   }
+  .why-choose {
+    overflow: hidden;
+  }
   .why-choose__list-item__img {
     padding: 6px;
+  }
+  .projects .swiper-slide {
+    width: 40% !important;
   }
   .contact-us__about {
     padding: 5%;
@@ -1045,7 +1050,7 @@ Demo Animation Style
     color: #F3F4F6;
     font-size: 20px;
   }
-  .header__menu_active {
+  .header__menu-active {
     display: flex;
     left: 30%;
   }
@@ -1122,10 +1127,10 @@ Demo Animation Style
   .hero__stats__item__number {
     font-size: 35px;
   }
-  .container {
+  header, section, footer {
     padding: 0 1%;
   }
-  .about-us__wrapper {
+  .about-us {
     grid-template-columns: auto;
     row-gap: 20px;
   }
@@ -1133,14 +1138,14 @@ Demo Animation Style
     left: -9%;
     top: 69%;
   }
-  .header__wrapper {
+  .header {
     width: 100%;
   }
   .hero__img img:nth-child(2) {
     top: 65%;
     left: 0;
   }
-  .why-choose__wrapper {
+  .why-choose {
     grid-template-columns: auto;
     grid-template-rows: 1fr minmax(200px, 400px);
   }
@@ -1186,11 +1191,9 @@ Demo Animation Style
     margin-top: 20%;
     margin-bottom: 5%;
   }
-  .footer {
+  .footer__wrapper {
     padding-top: 50px;
     padding-bottom: 40px;
-  }
-  .footer__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 5px;
     -moz-column-gap: 0;

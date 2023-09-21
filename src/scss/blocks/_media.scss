@@ -11,8 +11,16 @@
 			font-size: 14px;
 		}
 	}
-	.why-choose__list-item__img {
-		padding: 6px;
+	.why-choose {
+		overflow: hidden;
+		&__list-item__img {
+			padding: 6px;
+		}
+	}
+	.projects {
+		.swiper-slide {
+			width: 40% !important;
+		}
 	}
 	.contact-us {
 		&__about {
@@ -161,7 +169,7 @@
 				color: $color-white;
 				font-size: 20px;
 			}
-			&_active {
+			&-active {
 				display: flex;
 				left: 30%;
 			}
@@ -269,14 +277,12 @@
 			}
 		}
 	}
-	.container {
+	header, section, footer {
 		padding: 0 1%;
 	}
 	.about-us {
-		&__wrapper {
-			grid-template-columns: auto;
-			row-gap: 20px;
-		}
+		grid-template-columns: auto;
+		row-gap: 20px;
 		&__img {
 			img {
 				&:nth-child(2) {
@@ -287,9 +293,7 @@
 		}
 	}
 	.header {
-		&__wrapper {
-			width: 100%;
-		}
+		width: 100%;
 	}
 	.hero {
 		&__img {
@@ -303,10 +307,8 @@
 	}
 
 	.why-choose {
-		&__wrapper {
-			grid-template-columns: auto;
-			grid-template-rows: 1fr minmax(200px, 400px);
-		}
+		grid-template-columns: auto;
+		grid-template-rows: 1fr minmax(200px, 400px);
 		&__descr {
 			text-align: center;
 		}
@@ -363,9 +365,9 @@
 		}
 	}
 	.footer {
-		padding-top: 50px;
-		padding-bottom: 40px;
 		&__wrapper {
+			padding-top: 50px;
+			padding-bottom: 40px;
 			grid-template-columns: 1fr;
 			grid-template-rows: auto 1fr 5px;
 			column-gap: 0;

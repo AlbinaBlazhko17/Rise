@@ -109,16 +109,16 @@ document.addEventListener('DOMContentLoaded', () => {
     buttons = document.querySelector('.header__auth');
 
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('hamburger_active');
-    menu.classList.toggle('header__menu_active');
-    buttons.classList.toggle('header__auth_active');
+    hamburger.classList.toggle('hamburger-active');
+    menu.classList.toggle('header__menu-active');
+    buttons.classList.toggle('header__auth-active');
   });
 
   menuItem.forEach((item) => {
     item.addEventListener('click', () => {
-      hamburger.classList.toggle('hamburger_active');
-      menu.classList.toggle('header__menu_active');
-      buttons.classList.toggle('header__auth_active');
+      hamburger.classList.toggle('hamburger-active');
+      menu.classList.toggle('header__menu-active');
+      buttons.classList.toggle('header__auth-active');
     });
   });
 });
