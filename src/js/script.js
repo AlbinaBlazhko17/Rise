@@ -3,8 +3,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 document.addEventListener('DOMContentLoaded', () => {
   let mySwiper = new Swiper('.projects__carousel', {
     direction: 'horizontal',
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 'auto',
     wrapperClass: 'projects__carousel__wrapper',
     slideClass: 'projects__carousel-slide',
     navigation: {

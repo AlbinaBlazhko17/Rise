@@ -448,8 +448,8 @@ main {
   padding: 0;
 }
 .projects__carousel {
-  width: 100%;
-  padding: 0 55% 0 5%;
+  width: 48%;
+  padding: 0 5%;
   height: 100%;
   box-sizing: border-box;
 }
@@ -464,13 +464,17 @@ main {
   height: 100%;
 }
 .projects__carousel-slide__img {
+  width: 90%;
   margin-bottom: 40px;
+}
+.projects__carousel-slide__img img {
+  width: 100%;
 }
 .projects__carousel-slide__subtitle {
   margin-bottom: 16px;
 }
 .projects__carousel-slide__descr {
-  width: 500px;
+  width: 80%;
   display: inline-block;
 }
 .projects__carousel-slide__descr a {
@@ -931,8 +935,8 @@ Demo Animation Style
   .why-choose__list-item__img {
     padding: 6px;
   }
-  .projects .swiper-slide {
-    width: 40% !important;
+  .projects__carousel {
+    width: 55%;
   }
   .contact-us__about {
     padding: 5%;
@@ -944,7 +948,7 @@ Demo Animation Style
 @media screen and (max-width: 1110px) {
   .hero__wrapper {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto); /* Three rows */
+    grid-template-rows: repeat(3, auto);
     row-gap: 20px;
     -moz-column-gap: 0;
          column-gap: 0;
@@ -1007,10 +1011,7 @@ Demo Animation Style
     left: 73%;
   }
   .projects__carousel {
-    height: 700px;
-  }
-  .projects__carousel .swiper-slide {
-    width: 40% !important;
+    width: 55%;
   }
   .contact-us__about {
     padding: 5%;
@@ -1108,15 +1109,10 @@ Demo Animation Style
     gap: 10px;
   }
   .projects__carousel {
-    height: 600px;
-  }
-  .projects__carousel .swiper-slide {
-    width: 45% !important;
-  }
-  .projects__carousel-slide {
-    width: 80%;
+    width: 70%;
   }
   .projects__carousel-slide__img {
+    width: 80%;
     margin-bottom: 20px;
   }
   .contact-us button {
@@ -1174,10 +1170,7 @@ Demo Animation Style
     margin-bottom: 15px;
   }
   .projects__carousel {
-    height: 630px;
-  }
-  .projects__carousel .swiper-slide {
-    width: 60% !important;
+    width: 80%;
   }
   .services__list {
     padding: 0 20px;
@@ -1216,10 +1209,7 @@ Demo Animation Style
 }
 @media screen and (max-width: 400px) {
   .projects__carousel {
-    height: 620px;
-  }
-  .projects__carousel .swiper-slide {
-    width: 80% !important;
+    width: 90%;
   }
   .projects__header {
     flex-direction: column;

@@ -18,8 +18,8 @@
 		}
 	}
 	.projects {
-		.swiper-slide {
-			width: 40% !important;
+		&__carousel {
+			width: 55%;
 		}
 	}
 	.contact-us {
@@ -36,7 +36,7 @@
 	.hero {
 		&__wrapper {
 			grid-template-columns: 100%;
-			grid-template-rows: repeat(3, auto); /* Three rows */
+			grid-template-rows: repeat(3, auto);
 			row-gap: 20px;
 			column-gap: 0;
 		}
@@ -116,10 +116,7 @@
 	}
 	.projects {
 		&__carousel {
-			height: 700px;
-			.swiper-slide {
-				width: 40% !important;
-			}
+			width: 55%;
 		}
 	}
 	.contact-us {
@@ -238,13 +235,10 @@
 	}
 	.projects {
 		&__carousel {
-			height: 600px;
-			.swiper-slide {
-				width: 45% !important;
-			}
+			width: 70%;
 			&-slide {
-				width: 80%;
 				&__img {
+					width: 80%;
 					margin-bottom: 20px;
 				}
 			}
@@ -334,10 +328,7 @@
 	}
 	.projects {
 		&__carousel {
-			height: 630px;
-			.swiper-slide {
-				width: 60% !important;
-			}
+			width: 80%;
 		}
 	}
 	.services {
@@ -384,10 +375,7 @@
 @media screen and (max-width: 400px) {
 	.projects {
 		&__carousel {
-			height: 620px;
-			.swiper-slide {
-				width: 80% !important;
-			}
+			width: 90%;
 		}
 		&__header {
 			flex-direction: column;
