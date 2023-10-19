@@ -44,7 +44,7 @@ main {
 
 .header {
   position: fixed;
-  margin-top: 27px;
+  padding-top: 27px;
   margin-bottom: 72px;
   width: 90%;
   background-color: transparent;
@@ -52,6 +52,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   z-index: 9999;
+  transition: all 0.5s ease-out;
 }
 .header__menu {
   display: flex;
@@ -87,6 +88,9 @@ main {
 .header__auth {
   display: flex;
   justify-content: flex-end;
+}
+.header-active {
+  background-color: rgba(17, 27, 38, 0.65);
 }
 
 .hamburger {
@@ -378,7 +382,7 @@ main {
 .why-choose__img img:nth-child(2) {
   position: absolute;
   top: 80%;
-  left: 86%;
+  left: 80%;
   width: 182px;
   height: 182px;
   z-index: 1;

@@ -136,3 +136,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+window.addEventListener('scroll', () => {
+  // console.log(window.scrollY);
+  if (window.scrollY > document.querySelector('.hero').clientHeight) {
+    document.querySelector('.header').classList.add('header-active');
+  } else {
+    document.querySelector('.header').classList.remove('header-active');
+  }
+});
