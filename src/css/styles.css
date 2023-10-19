@@ -31,7 +31,7 @@ body button[type=submit] {
 }
 
 header, section, footer {
-  padding: 0 5%;
+  padding: 0 80px;
 }
 
 main {
@@ -304,8 +304,8 @@ main {
   position: absolute;
   width: 182px;
   height: 182px;
-  top: 61%;
-  left: -7%;
+  top: 64%;
+  left: -9%;
   z-index: 1;
 }
 .about-us__descr {
@@ -357,7 +357,7 @@ main {
 }
 
 .why-choose {
-  margin-top: 110px;
+  margin-top: 140px;
   height: 100%;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -366,7 +366,8 @@ main {
 }
 .why-choose__img {
   position: relative;
-  max-height: 700px;
+  max-height: 800px;
+  width: 730px;
 }
 .why-choose__img img {
   width: 100%;
@@ -381,8 +382,8 @@ main {
 }
 .why-choose__img img:nth-child(2) {
   position: absolute;
-  top: 80%;
-  left: 80%;
+  top: 84%;
+  left: 84%;
   width: 182px;
   height: 182px;
   z-index: 1;
@@ -456,7 +457,7 @@ main {
 }
 .projects__carousel {
   width: 48%;
-  padding: 0 5%;
+  padding: 0 80px;
   height: 100%;
   box-sizing: border-box;
 }
@@ -496,10 +497,14 @@ main {
   height: 10px;
 }
 .projects__header {
-  padding: 0 5%;
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 58px;
+}
+.projects__header .title {
+  margin-bottom: 0;
 }
 .projects__arrows {
   display: flex;
@@ -509,6 +514,7 @@ main {
   display: block;
 }
 .projects__arrows-prev {
+  margin-right: 12px;
   transform: scaleX(-1);
 }
 

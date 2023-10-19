@@ -7,7 +7,7 @@
 	padding: 0;
 	&__carousel {
 		width: 48%;
-		padding: 0 5%;
+		padding: 0 80px;
 		height: 100%;
 		box-sizing: border-box;
 		&__wrapper {
@@ -48,19 +48,24 @@
 		}
 	}
 	&__header {
-		padding: 0 5%;
+		padding: 0 80px;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-end;
+		margin-bottom: 58px;
+
+		.title {
+			margin-bottom: 0;
+		}
 	}
 	&__arrows {
 		display: flex;
 		justify-content: space-between;
-
 		img {
 			display: block;
 		}
 		&-prev {
+			margin-right: 12px;
 			transform: scaleX(-1);
 		}
 	}
