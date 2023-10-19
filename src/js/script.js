@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '.feedbacks__carousel-slide.swiper-slide-active'
         );
         activeSlide.style.boxShadow =
-          '0px 25px 32px 0px rgba(67, 67, 67, 0.14)';
+          '0px 30px 32px 0px rgba(67, 67, 67, 0.14)';
       },
       slideChange: function () {
         const slides = document.querySelectorAll('.feedbacks__carousel-slide');
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const activeSlide = slides[this.activeIndex];
         activeSlide.style.boxShadow =
-          '0px 25px 32px 0px rgba(67, 67, 67, 0.14)';
+          '0px 30px 32px 0px rgba(67, 67, 67, 0.14)';
       },
     },
   });
@@ -138,7 +138,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 window.addEventListener('scroll', () => {
-  // console.log(window.scrollY);
   if (window.scrollY > document.querySelector('.hero').clientHeight) {
     document.querySelector('.header').classList.add('header-active');
   } else {

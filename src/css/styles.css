@@ -421,10 +421,11 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: row;
-  gap: 5%;
+  gap: 30px;
   padding-bottom: 5%;
 }
 .services__list-item {
+  background-color: #fff;
   box-sizing: border-box;
   padding: 32px;
   transition: transform 0.3s;
@@ -433,7 +434,9 @@ main {
   border-radius: 10px;
 }
 .services__list-item .subtitle {
+  white-space: pre-line;
   margin-top: auto;
+  margin-bottom: 0;
 }
 .services__list-item__img {
   margin-bottom: 24px;
@@ -534,6 +537,7 @@ main {
   max-width: 500px;
   padding: 32px 60px;
   height: auto;
+  border-radius: 10px;
 }
 .feedbacks__carousel-slide__name {
   font-size: 14px;
@@ -557,12 +561,12 @@ main {
   line-height: 30px;
 }
 .feedbacks__carousel-slide__text::before {
-  content: url("../assets/icons/quotes.svg"); /* Replace with the path to your quote SVG */
-  margin-right: 10px; /* Adjust spacing */
+  content: url("../assets/icons/quotes.svg");
+  margin-right: 10px;
 }
 .feedbacks__carousel-slide__text::after {
-  content: url("../assets/icons/quote-after.svg"); /* Replace with the path to your quote SVG */
-  margin-left: 10px; /* Adjust spacing */
+  content: url("../assets/icons/quote-after.svg");
+  margin-left: 10px;
 }
 .feedbacks__carousel-pagination {
   margin-top: 80px;

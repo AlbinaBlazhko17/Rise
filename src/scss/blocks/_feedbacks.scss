@@ -21,6 +21,7 @@
 			max-width: 500px;
 			padding: 32px 60px;
 			height: auto;
+			border-radius: 10px;
 			&__name {
 				font-size: 14px;
 				color: #000;
@@ -42,12 +43,12 @@
 				color: $grey;
 				line-height: 30px;
 				&::before {
-					content: url("../assets/icons/quotes.svg"); /* Replace with the path to your quote SVG */
-					margin-right: 10px; /* Adjust spacing */
+					content: url("../assets/icons/quotes.svg");
+					margin-right: 10px;
 				}
 				&::after {
-					content: url("../assets/icons/quote-after.svg"); /* Replace with the path to your quote SVG */
-					margin-left: 10px; /* Adjust spacing */
+					content: url("../assets/icons/quote-after.svg");
+					margin-left: 10px;
 				}
 			}
 		}

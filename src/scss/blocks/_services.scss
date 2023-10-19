@@ -9,9 +9,10 @@
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-template-rows: 1fr 1fr;
 		grid-auto-flow: row;
-		gap: 5%;
+		gap: 30px;
 		padding-bottom: 5%;
 		&-item {
+			background-color: #fff;
 			box-sizing: border-box;
 			padding: 32px;
 			transition: transform 0.3s;
@@ -19,7 +20,9 @@
 			flex-direction: column;
 			border-radius: 10px;
 			.subtitle {
+				white-space: pre-line;
 				margin-top: auto;
+				margin-bottom: 0;
 			}
 			&__img {
 				margin-bottom: 24px;
