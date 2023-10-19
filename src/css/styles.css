@@ -426,6 +426,7 @@ main {
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 .services__list-item .subtitle {
   margin-top: auto;
