@@ -544,6 +544,7 @@ main {
   padding: 32px 60px;
   height: auto;
   border-radius: 10px;
+  background-color: #fff;
 }
 .feedbacks__carousel-slide__name {
   font-size: 14px;

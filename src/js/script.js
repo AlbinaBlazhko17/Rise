@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   var feedbackSwiper = new Swiper('.feedbacks__carousel', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: 50,
     centeredSlides: true,
 
     wrapperClass: 'feedbacks__carousel__wrapper',
@@ -44,18 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     on: {
       init: function () {
+        const notActiveSlide = document.querySelectorAll(
+          '.feedbacks__carousel-slide:not(.swiper-slide-active)'
+        );
+        notActiveSlide.forEach((slide) => {
+          slide.style.transform = 'scale(0.9)';
+        });
+
         const activeSlide = document.querySelector(
           '.feedbacks__carousel-slide.swiper-slide-active'
         );
-        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.3)';
+        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.2)';
+        activeSlide.style.transform = 'scale(1)';
       },
       slideChange: function () {
         const slides = document.querySelectorAll('.feedbacks__carousel-slide');
         slides.forEach((slide) => {
           slide.style.boxShadow = 'none';
+          slide.style.transform = 'scale(0.9)';
         });
         const activeSlide = slides[this.activeIndex];
-        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.3)';
+        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.2)';
+        activeSlide.style.transform = 'scale(1)';
       },
     },
   });
