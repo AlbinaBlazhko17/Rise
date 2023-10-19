@@ -3,9 +3,15 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 document.addEventListener('DOMContentLoaded', () => {
   let mySwiper = new Swiper('.projects__carousel', {
     direction: 'horizontal',
-    slidesPerView: 'auto',
-    autoHeight: true,
-    spaceBetween: 50,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    wrapperClass: 'projects__carousel__wrapper',
+    slideClass: 'projects__carousel-slide',
+    navigation: {
+      nextEl: '.projects__arrows-next',
+      prevEl: '.projects__arrows-prev',
+    },
+
     on: {
       init: function () {
         setTimeout(updateArrowColors, 0);
@@ -14,13 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateArrowColors();
       },
     },
-    wrapperClass: 'projects__carousel__wrapper',
-    slideClass: 'projects__carousel-slide',
 
-    navigation: {
-      nextEl: '.projects__arrows-next',
-      prevEl: '.projects__arrows-prev',
-    },
     breakpoints: {
       950: {
         slidesPerView: 1,
