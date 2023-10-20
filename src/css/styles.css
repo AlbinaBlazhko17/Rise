@@ -45,7 +45,7 @@ main {
 .header {
   position: fixed;
   padding-top: 27px;
-  margin-bottom: 72px;
+  padding-bottom: 28px;
   width: 90%;
   background-color: transparent;
   display: grid;
