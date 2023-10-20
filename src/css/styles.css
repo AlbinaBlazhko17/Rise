@@ -609,7 +609,18 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.contact-us__title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 500;
+}
+.contact-us__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
 .contact-us__about {
+  width: 100%;
+  box-sizing: border-box;
   padding: 60px 66px 76px 44px;
 }
 .contact-us__about__addr {
@@ -618,6 +629,7 @@ main {
   grid-row-gap: 24px;
 }
 .contact-us__about__addr__text {
+  white-space: pre-line;
   color: black;
 }
 .contact-us__about__addr-item {
@@ -632,6 +644,8 @@ main {
 }
 .contact-us__form {
   padding: 90px 140px 60px 80px;
+  width: 100%;
+  box-sizing: border-box;
   border-radius: 10px;
   background: #101C26;
   display: grid;
