@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeSlide = document.querySelector(
           '.feedbacks__carousel-slide.swiper-slide-active'
         );
-        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.2)';
+        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.3)';
         activeSlide.style.transform = 'scale(1)';
       },
       slideChange: function () {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
           slide.style.transform = 'scale(0.9)';
         });
         const activeSlide = slides[this.activeIndex];
-        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.2)';
+        activeSlide.style.boxShadow = '5px 30px 40px 0px rgba(67, 67, 67, 0.3)';
         activeSlide.style.transform = 'scale(1)';
       },
     },

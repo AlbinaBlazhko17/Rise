@@ -6,19 +6,17 @@
 	overflow: hidden;
 	padding: 0;
 	&__carousel {
-		width: 48%;
+		width: 50%;
 		padding: 0 80px;
-		height: 100%;
 		box-sizing: border-box;
 		&__wrapper {
 			display: flex;
 			justify-content: space-between;
 		}
 		&-slide {
-			width: fit-content;
 			width: 100%;
-  			height: 100%; 
 			&__img {
+				height: 640px;
 				width: 90%;
 				margin-bottom: 40px;
 				img {
@@ -27,11 +25,12 @@
 			}
 		
 			&__subtitle {
+				font-weight: 500;
 				margin-bottom: 16px;
 			}
 
 			&__descr {
-				width: 80%;
+				width: 90%;
 				display: inline-block;
 				a {
 					color: inherit;

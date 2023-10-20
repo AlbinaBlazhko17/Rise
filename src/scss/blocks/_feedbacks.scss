@@ -43,13 +43,30 @@
 				font-size: 20px;
 				color: $grey;
 				line-height: 30px;
-				&::before {
-					content: url("../assets/icons/quotes.svg");
-					margin-right: 10px;
-				}
 				&::after {
-					content: url("../assets/icons/quote-after.svg");
-					margin-left: 10px;
+					content: '';
+					display: inline-block;
+					background: url('../../assets/icons/quote-after.svg') no-repeat;
+					background-size: contain;
+					background-position: center;
+					position: relative;
+					width: 30px;
+					height: 30px;
+					left: 30px;
+					top: 12px;
+				}
+
+				&::before {
+					content: '';
+					display: inline-block;
+					background: url('../../assets/icons/quotes.svg') no-repeat;
+					background-size: contain;
+					background-position: center;
+					position: relative;
+					left: -15px;
+					top: 2px;
+					width: 30px;
+					height: 30px;
 				}
 			}
 		}
