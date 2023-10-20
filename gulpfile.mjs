@@ -29,7 +29,7 @@ gulp.task('build-js', () => {
 
 gulp.task('build-sass', () => {
   return gulp
-    .src('./src/scss/**/*.scss')
+    .src('./src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest('./src/css'))
