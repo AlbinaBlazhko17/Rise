@@ -2,7 +2,8 @@
 	position: fixed;
 	padding-top: 27px;
 	padding-bottom: 28px;
-	width: 90%;
+	width: 100%;
+	box-sizing: border-box;
 	background-color: transparent;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

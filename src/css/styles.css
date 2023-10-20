@@ -46,7 +46,8 @@ main {
   position: fixed;
   padding-top: 27px;
   padding-bottom: 28px;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -162,7 +163,6 @@ main {
   background-color: #101C26;
   background-image: url(../assets/img/background.png);
   height: 100%;
-  overflow: hidden;
 }
 .hero__wrapper {
   padding-top: 10%;
@@ -360,7 +360,7 @@ main {
   margin-top: 140px;
   height: 100%;
   display: grid;
-  grid-template-columns: auto 620px;
+  grid-template-columns: auto auto;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -380,8 +380,8 @@ main {
 }
 .why-choose__img img:nth-child(2) {
   position: absolute;
-  top: 84%;
-  left: 75%;
+  top: 83%;
+  left: 78%;
   width: 182px;
   height: 182px;
   z-index: 1;
@@ -432,8 +432,10 @@ main {
   flex-direction: column;
   border-radius: 10px;
 }
-.services__list-item .subtitle {
+.services__list-item .title {
   white-space: pre-line;
+}
+.services__list-item .subtitle {
   margin-top: auto;
   margin-bottom: 0;
 }
@@ -466,7 +468,6 @@ main {
   width: 100%;
 }
 .projects__carousel-slide__img {
-  height: 640px;
   width: 90%;
   margin-bottom: 40px;
 }
@@ -974,9 +975,6 @@ Demo Animation Style
   .subtitle-fz16 {
     font-size: 14px;
   }
-  .why-choose {
-    overflow: hidden;
-  }
   .why-choose__list-item__img {
     padding: 6px;
   }
@@ -1074,6 +1072,9 @@ Demo Animation Style
   }
 }
 @media screen and (max-width: 950px) {
+  header, section, footer {
+    padding: 0 30px;
+  }
   .hamburger {
     display: block;
   }
@@ -1139,6 +1140,10 @@ Demo Animation Style
     padding: 0;
     padding-top: 20%;
   }
+  .hero__img img:nth-child(4) {
+    top: 75%;
+    left: 77%;
+  }
   .hero__logos {
     justify-content: center;
   }
@@ -1151,7 +1156,14 @@ Demo Animation Style
     top: 45%;
   }
   .services__list {
-    gap: 10px;
+    gap: 20px;
+  }
+  .services__list-item {
+    padding: 20px;
+    align-items: center;
+  }
+  .services__list-item .title {
+    white-space: unset;
   }
   .projects__carousel {
     width: 70%;
@@ -1163,6 +1175,9 @@ Demo Animation Style
   .contact-us button {
     width: 100%;
   }
+  .why-choose__img img:nth-child(2) {
+    left: 65%;
+  }
   .why-choose__wrapper {
     grid-template-rows: auto;
   }
@@ -1170,6 +1185,9 @@ Demo Animation Style
 @media screen and (max-width: 650px) {
   .title-fz34 {
     font-size: 20px;
+  }
+  .hero__img img:nth-child(4) {
+    display: none;
   }
   .hero__stats__item__number {
     font-size: 35px;
@@ -1199,9 +1217,14 @@ Demo Animation Style
   .why-choose__descr {
     text-align: center;
   }
+  .why-choose__img {
+    width: 100%;
+  }
+  .why-choose__img img {
+    height: 100%;
+  }
   .why-choose__img img:nth-child(2) {
-    left: 80%;
-    top: 79%;
+    display: none;
   }
   .why-choose__list {
     align-items: center;
@@ -1214,7 +1237,11 @@ Demo Animation Style
   .why-choose__list-item__img {
     margin-bottom: 15px;
   }
+  .projects__header {
+    padding: 0 2%;
+  }
   .projects__carousel {
+    padding: 0 2%;
     width: 80%;
   }
   .services__list {
@@ -1224,6 +1251,10 @@ Demo Animation Style
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .feedbacks__carousel-slide {
+    padding: 20px 30px;
+    max-width: 320px;
   }
   .contact-us__wrapper {
     grid-template-columns: 1fr;
@@ -1252,12 +1283,37 @@ Demo Animation Style
     row-gap: 20px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .projects__carousel {
     width: 90%;
   }
   .projects__header {
     flex-direction: column;
     margin-bottom: 20px;
+  }
+  .feedbacks__carousel-slide {
+    padding: 20px;
+    max-width: 250px;
+  }
+  .feedbacks__carousel-slide__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .feedbacks__carousel-slide {
+    max-width: 270px;
+  }
+  .feedbacks__carousel-slide__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .feedbacks__carousel-slide__text::after, .feedbacks__carousel-slide__text::before {
+    width: 20px;
+    height: 20px;
+  }
+  .feedbacks__carousel-slide__text::after {
+    left: 5px;
+    top: 5px;
   }
 }

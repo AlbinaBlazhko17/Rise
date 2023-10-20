@@ -12,7 +12,6 @@
 		}
 	}
 	.why-choose {
-		overflow: hidden;
 		&__list-item__img {
 			padding: 6px;
 		}
@@ -137,6 +136,10 @@
 	}
 }
 @media screen and (max-width: 950px) {
+	header, section, footer {
+		padding: 0 30px;
+	}
+
 	.hamburger {
 		display: block;
 	}
@@ -214,6 +217,15 @@
 			padding: 0;
 			padding-top: 20%;
 		}
+
+		&__img {
+			img {
+				&:nth-child(4) {
+					top: 75%;
+					left: 77%;
+				}
+			}
+		}
 		&__logos {
 			justify-content: center;
 			img {
@@ -230,7 +242,14 @@
 	}
 	.services {
 		&__list {
-			gap: 10px;
+			gap: 20px;
+			&-item {
+				padding: 20px;
+				align-items: center;
+				.title {
+					white-space: unset;
+				}
+			}
 		}
 	}
 	.projects {
@@ -250,6 +269,13 @@
 		}
 	}
 	.why-choose {
+		&__img {
+			img {
+				&:nth-child(2) {
+					left: 65%;
+				}
+			}
+		}
 		&__wrapper {
 			grid-template-rows: auto;
 		}
@@ -263,6 +289,13 @@
 		}
 	}
 	.hero {
+		&__img {
+			img {
+				&:nth-child(4) {
+					display: none;
+				}
+			}
+		}
 		&__stats {
 			&__item {
 				&__number {
@@ -307,10 +340,11 @@
 			text-align: center;
 		}
 		&__img {
+			width: 100%;
 			img {
+				height: 100%;
 				&:nth-child(2) {
-					left: 80%;
-					top: 79%;
+					display: none;
 				}
 			}
 		}
@@ -327,7 +361,11 @@
 		}
 	}
 	.projects {
+		&__header {
+			padding: 0 2%;
+		}
 		&__carousel {
+			padding: 0 2%;
 			width: 80%;
 		}
 	}
@@ -341,6 +379,16 @@
 			}
 		}
 	}
+
+	.feedbacks {
+		&__carousel {
+			&-slide {
+				padding: 20px 30px;
+				max-width: 320px;
+			}
+		}
+	}
+
 	.contact-us {
 		&__wrapper {
 			grid-template-columns: 1fr;
@@ -372,7 +420,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
 	.projects {
 		&__carousel {
 			width: 90%;
@@ -380,6 +428,42 @@
 		&__header {
 			flex-direction: column;
 			margin-bottom: 20px;
+		}
+	}
+
+	.feedbacks {
+		&__carousel {
+			&-slide {
+				padding: 20px;
+				max-width: 250px;
+				&__text {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 330px) {
+
+	.feedbacks {
+		&__carousel {
+			&-slide {
+				max-width: 270px;
+				&__text {
+					font-size: 16px;
+					line-height: 20px;
+					&::after, &::before {
+						width: 20px;
+						height: 20px;
+					}
+					&::after {
+						left: 5px;
+						top: 5px;
+					}
+				}
+			}
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	margin-top: 140px;
 	height: 100%;
 	display: grid;
-	grid-template-columns: auto 620px;
+	grid-template-columns: auto auto;
 	column-gap: 30px;
 	&__img {
 		position: relative;
@@ -17,8 +17,8 @@
 			}
 			&:nth-child(2) {
 				position: absolute;
-				top: 84%;
-				left: 75%;
+				top: 83%;
+				left: 78%;
 				width: 182px;
 				height: 182px;
 				z-index: 1;
