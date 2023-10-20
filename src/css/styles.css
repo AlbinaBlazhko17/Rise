@@ -625,7 +625,7 @@ main {
 }
 .contact-us__about__addr {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-row-gap: 24px;
 }
 .contact-us__about__addr__text {
@@ -635,6 +635,8 @@ main {
 .contact-us__about__addr-item {
   display: flex;
   align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .contact-us__about__addr-item:nth-child(2) svg {
   margin-left: 2px;
