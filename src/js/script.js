@@ -102,12 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   signIn.addEventListener('click', (e) => {
     e.preventDefault();
-    MicroModal.show('modal-1');
+    MicroModal.show('signInModal');
   });
 
   signUp.addEventListener('click', (e) => {
     e.preventDefault();
-    MicroModal.show('modal-2');
+    MicroModal.show('signUpModal');
   });
   const menu = document.querySelector('.header__menu'),
     menuItem = document.querySelectorAll('.header__menu__item'),
