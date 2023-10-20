@@ -3,14 +3,24 @@
 	padding: 13px 32px;
 	border-radius: 100px;
 	cursor: pointer;
+	transition: all 0.4s ease-out;
 	&-outlined {
 		background-color: transparent;
 		border: 1px solid #CECECE;
 		color: #CECECE;
+		@include btn-border-drawing(#CECECE, $color-yellow, 2px, bottom, left);
+		&:hover {
+			border: 1px solid #CECECE;
+			color: $color-yellow;
+		}
 	}
 	&-yellow {
 		border: none;
 		background: $color-yellow;
+		&:hover {
+			background-color: $color-white;
+			color: $bg-black;
+		}
 	}
 	&-black {
 		display: flex;
@@ -20,6 +30,9 @@
 		color: $color-yellow;
 		padding: 14px 34px ;
 		border: none;
+		&:hover {
+			background-color: $bg-black;
+		}
 		svg {
 			margin-left: 10px;
 			margin-top: 2px;
